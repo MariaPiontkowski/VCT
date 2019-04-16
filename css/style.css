@@ -308,6 +308,7 @@ a:hover{
 	position:relative;
 	background-size:cover;
 	background-position-y: -85px;
+        height: 100vh;
 }
 
 .main_banner_area{
@@ -408,14 +409,14 @@ a:hover{
 	padding-bottom:50px;
 }
 .abouts{
-	background:#ddd;
+	background:#efefef;
 }
 
 .single_abouts p{
 	font-size:30px;
 	font-weight:300;
 	text-align:center;
-	font-family: 'Merriweather', serif;
+	font-family: 'Shadows Into Light Two', cursive;
 }
 .signature_img{}
 
