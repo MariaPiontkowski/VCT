@@ -24,7 +24,7 @@
 
 
 	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
-	<header id="home" class="header">
+	<header id="inicial" class="header">
 		<div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
 			<div class="container">
 				<div class="row">
@@ -50,14 +50,22 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#home">Inicial</a></li>
-							<li><a href="#features">Empresa</a></li>
-							<li><a href="#special">SERVIÇOS</a></li>
-							<li><a href="#abouts">LIVROS</a></li>
-							<li><a href="#footer">INFORMAÇÕES</a></li>
-							<li><a href="#footer">NOTÍCIAS</a></li>
-							<li><a href="#footer">CONTATO</a></li>
-							
+							<li class="active"><a href="#inicial">INICIAL</a></li>
+							<li><a href="#empresa">EMPRESA</a></li>
+							<li>
+								<div class="dropdown">
+								  SERVIÇOS
+								  <div class="dropdown-content main_menu_bg navbar-fixed-top wow">
+								    <a href="consultoria.html">CONSULTORIA</a>
+								    <br/>
+								    <a href="vivianizacao.html">VIVIANIZAÇÃO</a>
+								  </div>
+								</div>
+							</li>
+							<li><a href="#livros">LIVROS</a></li>
+							<li><a href="#info">INFORMAÇÕES</a></li>
+							<li><a href="#noticias">NOTÍCIAS</a></li>
+							<li><a href="#contato">CONTATO</a></li>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
@@ -83,8 +91,6 @@
 							<div class="separetor"></div>-->
 						</div>
 					</div>
-					
-					
 					<div class="scrolldown">
 						<a href="#features" class="scroll_btn"></a>
 					</div>
@@ -97,7 +103,7 @@
 	
 	
 
-	
+<div id="empresa"/>	
 	<section id="features" class="features">
 		<div class="container">
 			<div class="row">
@@ -114,16 +120,36 @@
 					<div class="col-md-3">
 						<div class="sinle_features wow slideInUp" data-wow-duration="1.5s">
 							<img src="images/viviano.jpg"/>
-
-							<a class="text-center col-md-12" href="http://www.alimentos.bio.br/site/memorias.pdf" target="_blank">Viviano Cabrera</a>
-						
+							<a class="text-center col-md-12" href="http://www.alimentos.bio.br/site/memorias.pdf" target="_blank">Viviano Cabrera Trigo</a>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
 	</section><!-- End of Abouts Section -->	
+
+	<section id="features" class="features">
+		<div class="container">
+			<div class=".sinle_features separetor invert"></div>
+			<div class="row">
+				<div class="features_content text-right">
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1.5s">
+							<img src="images/lacre.jpg"/>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
+							<h5>Você sabia?</h5>
+							<br/>
+							<p>Na década de 70, Viviano Cabrera sugeriu o lacre utilizado por baixo da tampa, técnica utilizada até hoje em embalagens de alimentos presentes em nosso dia a dia.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of Abouts Section -->	
+
 	
 	<!--<section id="special" class="special sections">
 		<div class="container">
@@ -278,29 +304,61 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_abouts wow slideInLeft" data-wow-duration="2s">
 							<div class="head_title text-center">
-								<h2>Produza alimentos com:</h2>
+								<h2>PRODUZA ALIMENTOS COM</h2>
 								<div class="separetor"></div>
 							</div>
 							
+							<br/>
 							<p><img src="images/check.png" /> Mais qualidade e conservação.</p>
 							<br/>
-							<p><img src="images/check.png" /></span> Menos conservantes.</p>
+							<p><img src="images/check.png" /> Menos conservantes.</p>
 							<br/>
-							<p><img src="images/check.png" /></span> Maior vida útil.</p>
+							<p><img src="images/check.png" /> Maior vida útil.</p>
 							<br/>
-							<p><img src="images/check.png" /></span> Menos custo de produção.</p>
-						</div>
+							<p><img src="images/check.png" /> Menos custo de produção.</p>
 					</div>
-					
-					<div class="col-md-6 col-sm-6 col-xs-12">
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_abouts wow slideInRight text-center" data-wow-duration="2s">
 							<img src="images/milk.png" alt="" style="margin-top: -80px; width: 50%;">
 						</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of Abouts Section -->
+
+	<section id="abouts" class="abouts sections" style="padding-top:0">
+		<div class="container">
+			<div class="row">
+				<div class="main_abouts">
+					<div class="col-md-12 col-sm-12 col-xs-12 slideInLeft">
+						<div class="head_title text-center col-md-6 pull-right">
+							<h2>SERVIÇOS</h2>
+							<div class="separetor"></div>
+						</div>
+					</div>
+					<br/>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts wow slideInLeft text-center" data-wow-duration="2s">
+							<img src="images/carne.jpg" alt="" style="width: 100%;">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts xs wow slideInRight" data-wow-duration="2s">
+							<p><img src="images/check.png" /> Adequação Sanitária e Higiênica em processos operacionais de alimentos.</p>
+							<br/>
+							<p><img src="images/check.png" /> Acessoria para melhor aproveitamento de insumos para limpeza de equipamentos/ambientes.</p>
+							<br/>
+							<p><img src="images/check.png" /> Assessoria na criação de procedimentos e treinamento de assepsia na produção.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section><!-- End of Abouts Section -->
+
+	
+</div>	
+	
 	
 	<!--<section id="menus" class="menus sections">
 		<div class="container">
