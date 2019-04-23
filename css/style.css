@@ -297,9 +297,12 @@ a:hover{
 	padding-top:10px;
 	padding-bottom:10px;
 	color: #000;
-    font-size: 30px;
+    /*font-size: 30px;*/
     font-weight: 500;
-    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Amatic SC', cursive;*/
+    font-family: 'Merienda', cursive;
+    font-size: 17px;
+
 }
 
 .main_menu_bg .navbar-nav>li>.dropdown{
@@ -308,6 +311,8 @@ a:hover{
   padding:0 15px;
   background: transparent;
   cursor: default;
+  height: 40px;
+  line-height: 40px;
 }
 
 
@@ -334,7 +339,8 @@ a:hover{
 
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content a{
 	color: #000;
-	font-size: 25px;
+	/*font-size: 25px;*/
+	font-size: 13px;
 }
 
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content a:hover {
@@ -362,7 +368,7 @@ a:hover{
 	background:url(../images/bg.png) no-repeat;
 	position:relative;
 	background-size:cover;
-	background-position-y: -85px;
+    background-position-y: -50px;
     height: 100vh;
 }
 
