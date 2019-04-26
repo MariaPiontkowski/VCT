@@ -378,11 +378,9 @@ a:hover{
 }*/
 
 .banner.menu{
-    height: 100vh;
-    position: fixed;
+        height: 280px;
     width: 100%;
-   opacity: .43;
-    transform: rotate(180deg);
+    box-shadow: 0 0 15px #fea698;
 }
 
 .main_banner_area{
@@ -402,13 +400,22 @@ a:hover{
 .features{
 	background:#44AD95;
 }
+.features.vi{
+	background: #44AD95;
+    background-image: url(http://negahtejarat.com/wp-content/uploads/2014/07/milky-1030x531.png);
+    background-size: 43%;
+    background-repeat-y: no-repeat;
+    background-position-y: bottom;
+    padding-bottom: 200px;
+}
 .sinle_features{
 	margin:50px 0px;
 }
 
-.sinle_features img{
+.sinle_features .round{
 	box-shadow: 0 0 1px 4px #EBD243;
     border-radius: 50%;
+    background: #fff;
 }
 .sinle_features h5{
     margin-bottom: 40px;
@@ -485,7 +492,10 @@ a:hover{
 .abouts{
 	background:#efefef;
 }
-
+.abouts.vi{
+	background:#fff;
+	padding-top: 0;
+}
 .single_abouts p{
 	font-size:30px;
 	font-weight:300;
@@ -496,14 +506,15 @@ a:hover{
 	font-size:25px;
 }
 .main_servicos li{
-	font-family: 'Patrick Hand', cursive;
-    font-size: 17px;
-    margin-bottom: 15px;
-    color:#000;
+	font-family: 'Merienda', cursive;
+    font-size: 14px;
+    margin-bottom: 17px;
+    color: #44AD95;
 }
 .main_servicos li .check{
 	width: 25px;
     margin-right: 10px;
+    opacity: 0.4;
 }
 
 .signature_img{}
