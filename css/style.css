@@ -297,12 +297,9 @@ a:hover{
 	padding-top:10px;
 	padding-bottom:10px;
 	color: #000;
-    /*font-size: 30px;*/
+    font-size: 30px;
     font-weight: 500;
-    /*font-family: 'Amatic SC', cursive;*/
-    font-family: 'Merienda', cursive;
-    font-size: 17px;
-
+    font-family: 'Amatic SC', cursive;
 }
 
 .main_menu_bg .navbar-nav>li>.dropdown{
@@ -339,8 +336,7 @@ a:hover{
 
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content a{
 	color: #000;
-	/*font-size: 25px;*/
-	font-size: 13px;
+	font-size: 25px;
 }
 
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content a:hover {
@@ -403,7 +399,8 @@ a:hover{
 .features.vi{
 	background: #44AD95;
     background-image: url(http://negahtejarat.com/wp-content/uploads/2014/07/milky-1030x531.png);
-    background-size: 43%;
+    /*background-size: 43%;*/
+    background-size: 530px;
     background-repeat-y: no-repeat;
     background-position-y: bottom;
     padding-bottom: 200px;
