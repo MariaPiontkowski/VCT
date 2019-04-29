@@ -18,6 +18,18 @@ body {
 	font-family: gzipper, Arial, Helvetica, sans-serif;
 }
 
+.rodape{
+	padding: 10px 20px 0 20px;
+    background: #EFEFEF;
+    text-align: right;
+    float: left;
+    width: 100%;
+}
+
+.rodape p{
+    font-size: 12px; 
+    font-family: 'Merriweather', serif;
+}
 
 /*==========================================
 PRE LOADER 
@@ -276,6 +288,9 @@ a:hover{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color:#3c3c3c;
 }
+.menu_page:not(.menu-scroll) .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color:#d2d2d2;
+}
 .main_menu_bg .navbar {
     margin-bottom:0px;
 }
@@ -302,6 +317,10 @@ a:hover{
     font-family: 'Amatic SC', cursive;
 }
 
+.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>a, .main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown{
+	color: #fff;
+}
+
 .main_menu_bg .navbar-nav>li>.dropdown{
   position: relative;
   display: inline-block;
@@ -312,10 +331,14 @@ a:hover{
   line-height: 40px;
 }
 
-
 .main_menu_bg .navbar-nav>li>.dropdown.active{
 	border: 1px solid #666;
 }
+
+.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown.active, .main_menu_bg.menu_page:not(.menu-scroll) .navbar-default .navbar-nav>.active>a{
+	border: 1px solid #d2d2d2;
+}
+
 
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content {
     display: none;
@@ -325,7 +348,7 @@ a:hover{
     z-index: 1;
     left: -25%;
     text-align: center;
-    animation: dropdwon 0.5s;
+    animation: dropdwon 0.3s;
     top: unset;
 }
 
@@ -339,8 +362,16 @@ a:hover{
 	font-size: 25px;
 }
 
+.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown .dropdown-content a{
+	color: #fff;
+}
+
 .main_menu_bg .navbar-nav>li>.dropdown .dropdown-content a:hover {
 	color: #3c3c3c;
+}
+
+.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown .dropdown-content a:hover {
+	color: #d2d2d2;
 }
 
 .main_menu_bg .navbar-nav>li>.dropdown:hover .dropdown-content {
@@ -374,9 +405,11 @@ a:hover{
 }*/
 
 .banner.menu{
-        height: 280px;
+    height: 310px;
     width: 100%;
-    box-shadow: 0 0 15px #fea698;
+    box-shadow: 0 0 10px #484848;
+    background-position-y: center;
+    filter: brightness(70%) saturate(115%);
 }
 
 .main_banner_area{
@@ -491,22 +524,52 @@ a:hover{
 }
 .abouts.vi{
 	background:#fff;
-	padding-top: 0;
+}
+.abouts.vi.milk{
+	background: url(../images/milk.drop.png) no-repeat right 38px;
+}
+.abouts.vi.gloves{
+	background: url(../images/gloves.png) no-repeat left 80px;
+    background-size: 50%;
+}
+.abouts.li.meat{
+	background: url(../images/carne.white.jpg) no-repeat right 38px;
+}
+.abouts.li{
+	background:#fff;
 }
 .single_abouts p{
 	font-size:30px;
 	font-weight:300;
-	text-align:center;
+	/*text-align:center;*/
 	font-family: 'Shadows Into Light Two', cursive;
+}
+.abouts.vi .single_abouts p{
+	font-size: 24px;
+    font-family: 'Lobster Two', cursive;
+}
+.abouts.vi .single_abouts p img, .abouts.li .single_abouts p img{
+	width: 17px;
+}
+.abouts.li h2{
+	font-size: 25px;
+}
+.abouts.li .single_abouts p{
+	font-size: 17px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+.abouts.li .livro{
+	width: 100%;
+    box-shadow: 0 0 10px #484848;
 }
 .single_abouts.xs p{
 	font-size:25px;
 }
 .main_servicos li{
-	font-family: 'Merienda', cursive;
-    font-size: 14px;
+	font-family: 'Lobster Two', cursive;
+    font-size: 17px;
     margin-bottom: 17px;
-    color: #44AD95;
+    /*color: #44AD95;*/
 }
 .main_servicos li .check{
 	width: 25px;
