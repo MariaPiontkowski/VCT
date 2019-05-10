@@ -6,7 +6,9 @@ Author URI: http://bootstrapthemes.co
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 
 body {
@@ -19,11 +21,16 @@ body {
 }
 
 .rodape{
-	padding: 10px 20px 0 20px;
+	padding: 10px 20px 0 20px;https://www.facebook.com/photo.php?fbid=2194407857306515&set=pcb.2731808766847110&type=3&theater#
     background: #EFEFEF;
     text-align: right;
     float: left;
     width: 100%;
+}
+
+.rodape.inside{
+    bottom: 0;
+    position: absolute;
 }
 
 .rodape p{
@@ -31,6 +38,10 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+.single_banner_text img{
+	padding: 10px;
+    width: 240px;
+}
 /*==========================================
 PRE LOADER 
 ==========================================*/
@@ -91,14 +102,14 @@ input[type="color"],
 	font-size: 16px;
 	font-family: 'Merriweather', serif;	
 	height: 45px;
-	border-bottom:1px solid #ddd;
+	border-bottom:1px solid #000;
 	background-color: rgba(255, 255, 255, 0);
 	border-radius:0;
 	-webkit-box-shadow:0;
 	box-shadow:inset 0 0px 0px rgba(0,0,0,0.075);
 }
 .form-control:focus {
-	border-color: #f9ce12;
+	border-color: #c2d051;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -186,11 +197,11 @@ a:hover{
 	font-weight: 300;
 	border-radius:0;
 	margin-top:30px;
+    background: transparent;
+    text-transform: uppercase;
 }
 .btn:hover {
-	background-color: transparent;
-	color: #000;
-	text-decoration: none;
+	box-shadow: 0 0 3px #888;
 }
 
 .pink-btn {
@@ -411,6 +422,12 @@ a:hover{
     background-position-y: center;
     filter: brightness(70%) saturate(115%);
 }
+.banner.contato{
+    background: url(../images/bg2.jpg) no-repeat;
+    filter: opacity(90%);
+    background-size: cover;
+    background-position-y: -40px;
+}
 
 .main_banner_area{
 	padding:300px 0px;
@@ -532,8 +549,11 @@ a:hover{
 	background: url(../images/gloves.png) no-repeat left 80px;
     background-size: 50%;
 }
-.abouts.li.meat{
-	background: url(../images/carne.white.jpg) no-repeat right 38px;
+.abouts.li.info{
+	background: url(../images/info.png) no-repeat left 20px;
+}
+.abouts.li.new{
+	background: url(../images/noticias.png) no-repeat right 20px;
 }
 .abouts.li{
 	background:#fff;
@@ -557,6 +577,12 @@ a:hover{
 .abouts.li .single_abouts p{
 	font-size: 17px;
     font-family: 'Shadows Into Light Two', cursive;
+    color: #767676;
+}
+.abouts.li .single_abouts p b{
+	font-family: 'Lobster Two', cursive;
+    font-size: 27px;
+    color: #656565;
 }
 .abouts.li .livro{
 	width: 100%;
