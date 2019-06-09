@@ -1,5 +1,8 @@
 
 jQuery(document).ready(function() {
+
+    $(this).scrollTop(0);
+
 	
 	$(window).load(function () {
 		$(".loaded").fadeOut();

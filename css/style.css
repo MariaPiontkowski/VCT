@@ -6,6 +6,31 @@ Author URI: http://bootstrapthemes.co
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+    color: #31A68B;
+    float: left;
+    padding: 7px 13px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid 1px #31A68B;
+    margin: 4px;
+}
+
+.pagination a.active {
+  background-color: #31A68B;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pagination a:hover:not(.active) {
+	transform: scale(1.1);
+}
+
 input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -578,6 +603,10 @@ a:hover{
 	font-size: 17px;
     font-family: 'Shadows Into Light Two', cursive;
     color: #767676;
+}
+.abouts.li.single .single_abouts p{
+	font-size: 15px;
+    font-family: 'Merriweather', serif;
 }
 .abouts.li .single_abouts p b{
 	font-family: 'Lobster Two', cursive;
