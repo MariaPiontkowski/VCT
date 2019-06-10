@@ -786,3 +786,143 @@ a:hover{
 	text-decoration: none;
 
 }
+
+.margin-auto{
+	margin: auto !important;
+	float: none;
+}
+
+
+@media (min-width: 984px){
+	.hidden-md{
+		display: none;
+	}
+
+	.hidden-sm{
+		display: block;
+	}
+
+	.hidden-xs{
+		display: block;
+	}
+
+	.col-xs-offset-3{
+	margin: 0;
+	}
+}
+
+@media (max-width: 984px){
+	.banner{
+	    background-position-y: 0;
+	}
+
+	img.round{
+		width: 50% !important;
+	}
+
+	.hidden-sm{
+		display: none;
+	}
+
+	.under{
+		z-index: 0;
+	}
+
+	.under-img{
+		position: absolute;
+		opacity: .6;
+	}
+
+	.head_title{
+		float: none !important;
+	}
+}
+
+
+@media (max-width: 768px){
+	.nave_menu .navbar-collapse{
+		width: 100%;
+		margin: -40px 0;
+		float: right;
+		overflow: hidden;
+		border: none;
+	}
+
+	.nave_menu .navbar-collapse ul{
+	    background: rgba(255, 255, 255, .7);
+		box-shadow: 0 0 5px #ccc;
+		width: 160px;
+		text-align: center;
+		float: right;
+	}
+
+	.nave_menu .navbar-collapse ul li .dropdown{
+	    width: 160px;
+	    padding: 0;
+	    margin-left: -10px;
+	}
+
+
+	.nave_menu .navbar-collapse ul li .dropdown .dropdown-content{
+	    position: absolute;
+		top: -20px;
+		left: -161px;
+		z-index: 999;
+		width: 80px;
+		background: rgba(255,255,255,.7);
+		animation: none;
+		color: #3c3c3c;
+	}
+	.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>a, .main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown .dropdown-content a{
+		color:#000;
+	}
+	.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown{
+	    color: #3c3c3c;
+	    background-color: transparent;
+	    text-transform: uppercase;
+	}
+
+	.menu_page:not(.menu-scroll) .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown .dropdown-content a:hover{
+		color: #3c3c3c;
+	}
+
+	.main_menu_bg.menu_page:not(.menu-scroll) .navbar-nav>li>.dropdown.active, .main_menu_bg.menu_page:not(.menu-scroll) .navbar-default .navbar-nav>.active>a{
+	    border: 1px solid #666;
+	}
+
+	.container {
+	    width: 80%;
+	}	
+
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #000;
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	    background-color: rgba(0,0,0,.1);
+	}	
+	.hidden-xs{
+	display: none;
+	}
+
+	.hidden-md{
+		display: block;
+	}
+
+	.over{
+		z-index: 9;
+	}
+
+
+	textarea.form-control {
+	    height: 60px;
+	}
+
+	.form-control{
+		background: rgba(255,255,255,.6) !important;
+	}
+
+	.banner.contato {
+	    background-position-y: 5px;
+	}
+}
