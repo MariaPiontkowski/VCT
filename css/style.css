@@ -926,3 +926,8 @@ a:hover{
 	    background-position-y: 5px;
 	}
 }
+@media (max-width: 768px){
+	.container {
+	    width: 100%;
+	}
+}
