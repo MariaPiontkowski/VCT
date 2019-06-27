@@ -67,7 +67,7 @@
               <li><a href="livros.html">LIVROS</a></li>
               <li class="hidden"><a href="informacoes.html">INFORMAÇÕES</a></li>
               <li class="hidden"><a href="noticias.html">NOTÍCIAS</a></li>
-              <li class="active"><a href="contato.html">CONTATO</a></li>
+              <li class="active"><a href="contato.php">CONTATO</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -86,6 +86,15 @@
           <div class="col-sm-7 col-sm-offset-5 col-xs-12">
             <div class="contact_area wow slideInLeft" data-wow-duration="2s">
               <div class="contact_form_area">
+                <div class="alert alert-success alert-dismissable" id="emailok">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    E-mail enviado com sucesso!
+                </div>
+                <div class="alert alert-danger alert-dismissable" id="emailnok">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Erro ao enviar e-mail! Tente novamente
+                </div>
+
                 <form action="" id="formid" method="POST">
                   <div class="row">
                     <div class="col-sm-6 col-xs-12">
@@ -173,7 +182,7 @@
 
   <script type="text/javascript" src="js/jquery/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap/alert.min.js"></script>
   <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
@@ -183,8 +192,6 @@
 
 </body>
 </html>
-
-
 
 <?php
 
@@ -242,8 +249,8 @@ $corpo="<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'>
                 <TD width=450 bgColor=#fff>$cidade</TD>
               </TR>
           	  <TR>
-                <TD vAlign=top align=right width=150 bgColor=#cccccc><B>Mensagem</B></TD>
-                <TD width=450 bgColor=#e0e0e0>$mensagem</TD>
+                <TD vAlign=top align=right width=150 bgColor=#fff><B>Mensagem</B></TD>
+                <TD width=450 bgColor=#fff>$mensagem</TD>
               </TR>
               <TR>
                <TD align=middle style='background:#31A68B' colSpan=2>
@@ -255,11 +262,16 @@ $corpo="<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'>
       </HTML>";
 
   if(mail($to, $subjetc, $corpo, $header_email)){
-
+    ?><script>$(function(){ $("#emailok").show();$("#emailnok").hide();});</script><?php
   }else{
-
+  ?><script>$(function(){ $("#emailnok").show();$("#emailok").hide();});</script><?php
   }
 
-  header("Location:contato.html");
-
+}else{
+  ?><script>
+    $(function(){
+       $("#emailok").hide();
+       $("#emailnok").hide();
+    });
+  </script><?php
 }
