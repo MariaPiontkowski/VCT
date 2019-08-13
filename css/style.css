@@ -53,6 +53,17 @@ body {
     width: 100%;
 }
 
+.rodape_viviano{ 
+	text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.rodape_viviano p{
+    font-size: 12px; 
+    font-family: 'Merriweather', serif;
+}
+
 .rodape.inside{
     bottom: 0;
     position: absolute;
