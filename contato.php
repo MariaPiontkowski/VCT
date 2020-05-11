@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Instituto Alimentos</title>
+  <meta name="keywords" content="conservação,alimentos,viviano cabrera trigo">
+  <meta name="description" content="Manual Prático de Higiene e Sanidade nas Unidades de Alimentação e Nutrição | Lições de um Pioneiro"/>
+  <title>Instituto Alimentos - Contato</title>
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light+Two|Merienda" rel="stylesheet">
@@ -167,9 +169,9 @@
       </div>
     </div>
     
-    <section class="rodape inside">
-      <p>2019 &copy; <a href="mailto:maria.piontkowski@hotmail.com">Maria Cecília Piontkowski Alves</a></p>
-    </section>
+  <section class="rodape" >
+    <p>2019 &copy; Desenvolvido por <a href="http://piontkowski.heliohost.org/" target="_blank">Maria Cecília Piontkowski Alves</a></p>
+  </section>
   </section><!-- End of Banner Section -->
   
   
@@ -203,8 +205,8 @@ $cidade		=	$_POST["cidade"];
 $telefone	=	$_POST["telefone"];
 $mensagem	=	nl2br($_POST["mensagem"]);
 
-$to = "cissamc.alves@gmail.com";
-//$to = "carutorypa@gmail.com";
+//$to = "alf.bnu@gmail.com";
+$to = "carutorypa@gmail.com";
 
 
 $data = date('d/m/Y');
@@ -264,7 +266,7 @@ $corpo="<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'>
   if(mail($to, $subjetc, $corpo, $header_email)){
     ?><script>$(function(){ $("#emailok").show();$("#emailnok").hide();});</script><?php
   }else{
-  ?><script>$(function(){ $("#emailnok").show();$("#emailok").hide();});</script><?php
+    ?><script>$(function(){ $("#emailnok").show();$("#emailok").hide();});</script><?php
   }
 
 }else{
