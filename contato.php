@@ -82,7 +82,7 @@
   </header> <!--End of header -->
   
   <section id="banner" class="banner contato">
-    <section id="contato" style="top: 125px; position: relative;">
+    <section id="contato" style="top: 20rem;position: relative;height: calc(100vh - 20rem);">
       <div class="container ">
         <div class="row">
           <div class="col-sm-7 col-sm-offset-5 col-xs-12">
@@ -169,8 +169,8 @@
       </div>
     </div>
     
-  <section class="rodape" >
-    <p>2019 &copy; Desenvolvido por <a href="http://piontkowski.heliohost.org/" target="_blank">Maria Cecília Piontkowski Alves</a></p>
+  <section class="rodape" style="position:absolute; bottom:0">
+    <p>2019 &copy; Desenvolvido por <a href="http://piontkowski.heliohost.org/" target="_blank">Maria Cecília Piontkowski Alves </a></p>
   </section>
   </section><!-- End of Banner Section -->
   
@@ -205,7 +205,6 @@ $cidade		=	$_POST["cidade"];
 $telefone	=	$_POST["telefone"];
 $mensagem	=	nl2br($_POST["mensagem"]);
 
-//$to = "alf.bnu@gmail.com";
 $to = "carutorypa@gmail.com";
 
 
